@@ -1,0 +1,68 @@
+
+
+header{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: spce-between;
+	border-bottom: 1px sold grey;
+	position: fixed;
+	width: 100%;
+	
+	
+}
+
+.logo{
+	height: 50px;
+}
+
+.header-action{
+		
+}
+.header-actions
+{
+	height: 30px;
+	
+}
+
+
+footer {
+	
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: spce-between;
+	border-top: 1px sold grey;
+	position: 0;
+	width: 100%;
+	
+}
+
+.footer-action{
+	height: 40px;
+}
+
+.user {
+	border-radius: 15px;
+	
+}
+
+.profile-pic {
+	height: 70px;
+	width: 70px;
+	
+}
+
+.status-containger {
+	padding-top: 50px;
+	padding-left: 50px;
+	height:70px;
+}
+
+.status {
+	padding: 16px;
+	width: flex;
+	flex-direction: column;
+	align-items: center;
+
+}

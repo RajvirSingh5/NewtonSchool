@@ -1,0 +1,132 @@
+html{
+	scroll-behaviour: smooth;
+	
+}
+body{
+	font-family: "Poppins", sans-serif;
+	color: var(--txt-primary);
+}
+
+h1,
+h2 {
+	font-family: "Railway", sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+
+header{
+	background: var(--clr-primary);
+	display: flex;
+	justify-content: flex-end;
+	position: fiexed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+}
+
+
+.nav-list{
+	display: flex;
+}
+.nav-list a{
+	display: flex;
+	padding : 1em;
+	text-transform: uppercase;
+}
+
+.about-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url("nature_image1.jpg")
+	background-position: center;
+	background-size: cover;
+}
+
+.about-section h2{
+	font-size: 3rem;
+	color: var(--cl-primary);
+	font-style: italic;
+
+}
+
+/*Projects Section */
+.projects-section{
+	background-color: var(--cl-secondary);
+	padding : 3em 2em;
+}
+
+.projects-flex {
+	width: 100%;
+	max-width: 1280px;
+	margin: 2em auto 3em auto;
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	overflow-y: scroll;
+}
+
+.project-title {
+	background-color: var(--cl-primary);
+	border-radius: 5px;
+	display: block;
+	width: 320px;
+}
+
+.project-image{
+	height: 320px;
+	width: 320px;
+	object-fit: cover;
+	border-radius: 0.5em;
+}
+
+.project-title: hover {
+	background-color: var(--txt-primary);
+		
+}
+
+.contact-section {
+	background: var(--cl-tertiary);
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.coffee{
+	font-style: italic;
+	
+	margin-top: 1em;
+	
+}
+
+.contact-links {
+	margin-top: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.contact {
+	padding: 0.75em 1.5 em;
+	transition: transform 0.3s ease-out;
+	transform: translateY(0);
+}
+.contact: hover {
+	transfrom: translateY(10px);
+}
+
+footer{
+	display: flex;
+	background: var(--cl-tertiary);
+	border-top: 4px sold var(--cl-primary);
+	padding: 2em;
+	justify-content: space-evenly:
+	
+}
