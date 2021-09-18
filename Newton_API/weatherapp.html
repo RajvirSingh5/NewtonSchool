@@ -1,0 +1,22 @@
+
+<script>
+var latitude;
+var longitude;
+var APIkey = '';
+
+navigator.geolocation.getCurrentPosition((position) => {
+	latitude= position.coords.latitude;
+	longitude = position.coords.longitude;
+	
+	fethch('url')
+	.then(response => response.json())
+	.then(data => console.log(data))
+		temp.innerHTML = Math.floor(data.main.temp -273.0) +"Cel";
+		loc.innerHTML = data.name + ' ,' + data.sys.country;
+		summary.innerHTML = data.weather[0].description;
+		
+	
+	})
+	
+
+</script>
