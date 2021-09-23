@@ -1,0 +1,37 @@
+body {
+	background-image: url('https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+	background-size: cover;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	
+}
+
+h1 {
+	color: goldenrod;
+}
+
+
+p{
+	color:white;
+}
+
+#message-el {
+	font-style: italic;
+}
+
+
+button{
+	color: #016f32;
+	width: 150px;
+	background: goldenrod;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 2px;
+	margin-bottom: 2px;
+	maring-top: 2px;
+
+}

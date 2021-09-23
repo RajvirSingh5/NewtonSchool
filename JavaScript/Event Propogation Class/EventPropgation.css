@@ -1,0 +1,37 @@
+
+.top-container {
+	text-align: center;
+	background-color: #eee;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-1 {
+	background-color: #fff;
+	border: 1px solid black;
+	padding: 50px;
+}
+
+#container-2 {
+	background-color: #fff;
+	border: 1px solid black;
+	padding: 50px;
+}
+
+#container-3 {
+	background-color: #fff;
+	border: 1px solid black;
+	padding: 50px;
+}
+
+.container:hover{
+  background-color: yellow;
+  border: 1px solid red;
+  
+}
+
+
+	
