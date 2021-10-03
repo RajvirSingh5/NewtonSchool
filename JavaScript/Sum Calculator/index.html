@@ -9,17 +9,19 @@
 	<body>
 		<form name="input" action="#" method="get">
 			<h3>Number 1</h3>
-			<input type="text" name="time" value=" " id="num1">
+			<input type="number" value=" " id="num1" placeholder="num1">
 			<br><br>
 			<h3>Number 2</h3>
-			<input type="text" name="num2" value=" " id="num2">
+			<input type="number" value=" " id="num2" placeholder="num2">
+			
+			<br><br>
+			<input type="button" value="Add" onclick="updatesum()" id="mybtn">
 			
 			<br><br>
 			<h3>Result</h3>
-			<input type="text" name="result" id="result" disabled>
+			<input type="text" id="result" placeholder="result" value="" disabled>
 		
-			<br><br>
-			<input type="submit" value="Submit" onclick="updatesum()" id="mybtn">
+			
     
 		</form>
 		<script src="./sumCalc.js"></script>
