@@ -57,6 +57,7 @@ header{
     justify-content: center;
     flex-flow: column;
     text-align: center;
+	
 }
 
 header .user img{
@@ -70,6 +71,7 @@ header .user img{
 
 header .navbar{
     width:100%;
+	
 }
 
 header .user .name{
@@ -96,6 +98,7 @@ header .navbar ul li a{
     color:#fff;
     font-size: 2rem;
     border-radius: 5rem;
+	text-decoration: none;
 }
 
 header .navbar ul li a:hover{
@@ -221,8 +224,8 @@ td {
 }
 
 .techstack .box-container .box{
-    height: 20rem;
-    width:26rem;
+    height: 14rem;
+    width:20rem;
     border-radius: 1rem;
     margin:2rem;
     overflow: hidden;
