@@ -1,0 +1,10 @@
+body{
+	background-color: beige;
+}
+
+
+#wrapper{
+	height: 400px;
+	overflow: auto;
+}
+

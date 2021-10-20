@@ -1,0 +1,28 @@
+Promise.all() accepts an array of promises as its arguments and returns a single promises. That single promise will settle in one of  two ways.
+
+1. If every promise in the argument array resolves, the single promise returned from Promise.all() will resolve with an array containing the resolve value from each promise in the argument array.
+
+
+2. If any promise from the argument array rejects, the single promise returned from Promise.all() will immediately reject with the reason that promise rejected. This behaviour is sometiems referred to as failing fast.
+
+let myPromises = Promise.all([returnsPromOne(), returnsPromTwo(), returnsPromThree()]);
+
+myPromises
+	.then((arrayOfValues) => {
+		console.log(arrayOfValues);
+	})
+	.catch((rejectionReason) => {
+		console.log(rjectionReason);
+	});
+
+What's happening:
+
+1. We declare myPromises assigned to invoking Promise.all().
+
+2. We invoke Promises.all() with an array of three promises-the returned values from functions.
+
+3. We invoke .then() with a success handler which will print the array of resolved values if each promise resolves successfully.
+
+4. We invoke .catch() with a failure handler which will print the first rejection meassage if any promise rejects.
+
+
