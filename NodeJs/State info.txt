@@ -1,0 +1,24 @@
+State
+
+A state is an object that stores the values of prperties belonging to a component that could change over a period of time.
+
+1. A state can be modified based on the user action or network changes.
+2. every teim the state of an object changes, React re-renders the component to the browser.
+3. The state object is initialized in the constructor.
+4. The state object can store multiple properties.
+5. this.setState() is used to change the value of the state object.
+6. setState() functio perorms a shoo merge between the new and th previous state.
+
+
+Diff b/w props and state
+Props
+1. Prps are used to pass data and event handlers to its childer components.
+2. Props are immutable -Once set, props cannot be changed.
+3. Props can be used in both functional and class components.
+4. Props are set by the parent component for the children components.
+
+State
+1. State is used to store the data of the components that has to be rendered to the view.
+2. State holds the data and can change over time.
+3. State can only be used in class components
+4. State is generally updated by event handlers.

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6 {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	padding: 5px;
+	border: 1px solid black;
+}

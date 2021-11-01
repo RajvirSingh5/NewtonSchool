@@ -1,0 +1,17 @@
+img {
+	height: 80px;
+	width: 80px;
+}
+
+#mydiv {
+	position: absolute;
+	background-color: #f1f1f1;
+	border: 1px solid darkblue;
+}
+
+#mydivheader {
+	padding: 10px;
+	cursor: move;
+	background-color: #2196F3;
+}
+
