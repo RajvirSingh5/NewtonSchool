@@ -1,13 +1,16 @@
-class OnlyEvens extends React.Component {
+import React from 'react';
+
+class OnlyEvents extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 	
 	shouldComponentUpdate(nextProps, nextState) {
-		console.log("Should I update?");
-		if(nextProps.value %2 == 0) {
+		console.log('Should I update?');
+		//Change code below this line
+		if(nextProps.value % 2 == 0) {
 			return true;
-		} else{
+		} else {
 			return false;
 		}
 	}
@@ -17,7 +20,7 @@ class OnlyEvens extends React.Component {
 	}
 	
 	render() {
-		return <h1>{this.props.value}</h1>;
+		return<h1>{this.props.value}</h1>
 	}
 	
 }
@@ -32,7 +35,7 @@ class Controller extends React.Component {
 	}
 	
 	addValue() {
-		this.setState( state => ({
+		this.setState(state => ({
 			value: state.value + 1
 		}));
 	}
@@ -41,8 +44,9 @@ class Controller extends React.Component {
 		return(
 			<div>
 				<button onClick = {this.addValue}>Add</button>
-				<OnlyEvens value = {this.state.value} />	
+					<OnlyEvents value = {this.state.value} />
 			</div>
-			);
+		);
 	}
-}	
+}
+	

@@ -1,27 +1,31 @@
+/* useState() return an array with two values:
+current state : the current value of this state
+state setter : a function that we can use to update the value of this state. 
+
+*/
+
 import React, { useState } from 'react';
 
 export default function ColorPicker() {
 	const [color, setColor] = useState();
 	
-	const divStyle = { background: color};
+	const divStyle = { backgroundColor: color };
 	
 	return(
-		<div style={divStyle}>
-			<p>The color is {color} </p>
-			<button onClick={() => setColor('Aquamarine')}>
-				Aquamarine
+		<div style = { divStyle} >
+			<p> The color is {color} </p>
+			<button onClick = {() => setColor('Aquamarine')}>
+			Aquamarine
 			</button>
-			<button onclick={() => setColor('BlueViolet')}>
-				BlueViolet
+			<button onClick = {() => setColor('BlueViolet')}>
+			BlueViolet
 			</button>
-			<button onclick={() => setColor('Chartreuse')}>
-				Chartreuse
+			<button onClick= {() => setColor('Chartreuse')} >
+			Chartreuse
 			</button>
-			<button onClick={() => setColor('CornflowerBlue')}>
-				CornflowerBlue
+			<button onclick = {() => setColor('CornflowerBlue')}>
+			CornflowerBlue
 			</button>
 		</div>
-		
 	);
 }
-

@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
-import NewTask from './Presentational/NewTask";
-import TasksList from './Presentational/TasksList';
+import NewTask from './Presentational/NewTask';
+import TaskList from './Presentational/TaskList';
 
 export default class AppClass extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			newTask: {},
-			allTask: []
+			allTasks: []
 		};
-		
 		this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleSubmit = this.handeSubmit.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
 	}
 	
-	handleChange({ target }) {
-		const [name, value] = target;
+	handleChange({target}) {
+		const {name, value } = target;
 		this.setState((prevState) => ({
 			...prevState,
 			newTask: {
@@ -28,7 +27,7 @@ export default class AppClass extends Component {
 	}
 	
 	handleSubmit(event) {
-		event.preventDefault();
+		event.prventDefault();
 		if(!this.state.newTask.title) return;
 		this.setState((prevState) => ({
 			allTasks: [prevState.newTask, ...prevState.allTasks],
@@ -46,17 +45,20 @@ export default class AppClass extends Component {
 	render() {
 		return(
 			<main>
-				<h1>Tasks</h1>
-				<NewTask
-					newTask = {this.state.newTask}
-					handleChange = {this.handleChange}
-					handleSubmit = {this.handleSubmit}
+				<h1>Task</h1>
+				<NewTask 
+					newTask={this.state.newTask}
+					handleChange={this.handleChange}
+					handleSubmit={this.handleSubmit}
 				/>
 				<TaskList
-					allTask = {this.state.allTasks}
-					handleDelete = {this.handleDelete}
+					allTasks={this.state.allTasks}
+					handleDelete={this.handleDelete}
 				/>
 			</main>
 		);
 	}
+	
+}
+	
 	

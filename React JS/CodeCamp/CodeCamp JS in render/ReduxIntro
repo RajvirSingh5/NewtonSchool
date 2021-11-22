@@ -1,0 +1,16 @@
+Redux
+Redux is a predicatable state container for JavaScript apps.
+It can be used with React, Angular, Vue or JS.
+Redux is a library for JS applications.
+
+* Reudx is a state container
+. Redux stores the state of your applications.
+. Consider a React app-state of a component.
+. State of an app is the state represented by all the individual compoenets of that app.
+. Redux will store and manage the application state.
+
+
+
+
+
+
